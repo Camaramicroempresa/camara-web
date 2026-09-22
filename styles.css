@@ -157,9 +157,18 @@ ul,ol{list-style:none}
 .section--photo .section__title{color:#fff}
 .section--photo .section__lead{color:rgba(255,255,255,.9)}
 #afiliate .sec-bg{background-image:url('assets/img/afiliate.jpg')}
-#contacto .sec-bg{background-image:url('assets/img/team.jpg')}
+#contacto .sec-bg{background-image:url('assets/img/contacto2.jpg')}
 .section--photo .steps h4{color:#fff}
 .section--photo .steps p{color:rgba(255,255,255,.82)}
+
+/* ===== GALERÍA ===== */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.gitem{position:relative;margin:0;border-radius:14px;overflow:hidden;box-shadow:var(--shadow-sm);cursor:pointer}
+.gitem img{width:100%;height:215px;object-fit:cover;display:block;transition:transform .45s ease}
+.gitem:hover img{transform:scale(1.07)}
+.gitem figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 12px 11px;color:#fff;font-family:var(--display);font-weight:600;font-size:.92rem;background:linear-gradient(transparent,rgba(11,20,40,.88))}
+@media (max-width:960px){.gallery{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.gallery{grid-template-columns:1fr}.gitem img{height:230px}}
 .section__head{max-width:760px;margin:0 auto 54px;text-align:center}
 .eyebrow{display:inline-block;font-family:var(--display);font-weight:600;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--green);margin-bottom:12px}
 .eyebrow--light{color:var(--cyan)}
